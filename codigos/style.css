@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #091921;
+    font-family: 'Inconsolata';
+    font-size: 2rem;
+}
+/*Personalizando os visores*/
+#visorTotal {
+    width: 488px;
+    height: 240px;
+    transform: translateX(-14px) translateY(-3px);
+}
+
+#visorSuperior {
+    /*Ajustes de posição*/
+    position: absolute;
+    width: 484px;
+    height: 60px;
+    top: 0;
+    right: 0;
+    /*Ajustes aparencia*/
+    border: none;
+    outline: none;
+    /*Ajustes de texto*/
+    text-align: right;
+    font-family: 'Inconsolata';
+    font-size: 1.5rem;
+    color: #999999;
+}
+
+#visorInferior {
+    /*Ajustes de posição*/
+    position: absolute;
+    width: 484px;
+    height: 180px;
+    top: 60px;
+    right: 0;
+    /*Ajustes aparencia*/
+    border: none;
+    outline: none;
+    /*Ajustes de texto*/
+    text-align: right;
+    font-family: 'Inconsolata';
+    font-size: 5rem;
+    color: #121212;
+}
+
+/*Personalizando os botões*/
+.b1 {
+    /*Ajustes de posição*/
+    width: 120px;
+    height: 120px;
+    /*Ajustes de aparencia*/
+    border-style: none;
+    outline: none;
+    background: #ff3077;
+    /*Ajustes de texto*/
+    font-family: 'Inconsolata';
+    font-size: 2rem;
+    color:#fff;    
+}
+
+.b2 {
+    /*Ajustes de posição*/
+    width: 120px;
+    height: 120px;
+    /*Ajustes de aparencia*/
+    border-style: none;
+    background: #0c2835;
+    outline: none;
+    /*Ajustes de texto*/
+    font-family: 'Inconsolata';
+    font-size: 2rem;
+    color:#fff;
+}
+
+.b3 {
+    /*Ajustes de posição*/
+    width: 120px;
+    height: 242px;
+    transform: translateY(-122px);
+    /*Ajustes de aparencia*/
+    border-style: none;
+    background: #0c2835;
+    outline: none;
+    /*Ajustes de texto*/
+    font-family: 'Inconsolata';
+    font-size: 2rem;
+    color:#fff;
+    
+}
+
+.b4 {
+    /*Ajustes de posição*/
+    width: 120px;
+    height: 120px;
+    /*Ajustes de aparencia*/
+    border-style: none;
+    background: #03b1ff;
+    outline: none;
+    /*Ajustes de texto*/
+    font-family: 'Inconsolata';
+    font-size: 2rem;
+    color:#fff;
+}
+
+/*Realocando os botoes*/
+.b1, .b2, .b3, .b4 {
+    margin-top: 2px;
+    margin-left: -14px;
+}
+
+#linha04 {
+    height: 122px;
+}
+
+#bt-1, #bt-2, #bt-3 {
+    transform: translateY(-61px);
+}
+
+/*Animação clique*/
+.b1:active, .b2:active, .b3:active, .b4:active {
+    background: #74ff3b;
+    color: #111;
+}
