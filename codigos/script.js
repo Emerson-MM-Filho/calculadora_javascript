@@ -16,7 +16,6 @@ window.addEventListener('load', function() {
 //Atribuir eventos para os botões da calculadora
 function atribuirEventos () {
     //Eventos de numeros
-    document.querySelector('#bt-00').addEventListener('click', clicarNumero)
     document.querySelector('#bt-0').addEventListener('click', clicarNumero)
     document.querySelector('#bt-1').addEventListener('click', clicarNumero)
     document.querySelector('#bt-2').addEventListener('click', clicarNumero)
