@@ -19,16 +19,15 @@ body{
 #visorSuperior {
     /*Ajustes de posição*/
     position: absolute;
-    width: 484px;
-    height: 60px;
-    top: 0;
+    width: 488px;
+    top: 35px;
     right: 0;
     /*Ajustes aparencia*/
+    background-color: #fff;
     border: none;
     outline: none;
     /*Ajustes de texto*/
     text-align: right;
-    font-family: 'Inconsolata';
     font-size: 1.5rem;
     color: #999999;
 }
