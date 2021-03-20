@@ -46,7 +46,11 @@ body{
     text-align: right;
     font-family: 'Inconsolata';
     font-size: 5rem;
-    color: #121212;
+    color: #121212; 
+}
+/*Removendo a barra lateral do input number*/
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;  
 }
 
 /*Personalizando os botões*/
