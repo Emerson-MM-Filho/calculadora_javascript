@@ -15,32 +15,32 @@
         </div>
         <div id="botoes">
             <div id="linha01">
-                <button id="bt-C" class="b1">C</button>
-                <button id="bt-AC" class="b1">AC</button>
-                <button id="bt-divisao" class="b2">/</button>
-                <button id="bt-multiplicacao" class="b2">*</button>
+                <button id="bt-C" class="b1 clear">C</button>
+                <button id="bt-AC" class="b1 clear">AC</button>
+                <button id="bt-divisao" class="b2 operator">/</button>
+                <button id="bt-multiplicacao" class="b2 operator">*</button>
             </div>
             <div id="linha02">
-                <button id="bt-7" class="b2">7</button>
-                <button id="bt-8" class="b2">8</button>
-                <button id="bt-9" class="b2">9</button>
-                <button id="bt-subtracao" class="b2">-</button>
+                <button onclick="numberClick(this)" id="bt-7" class="b2 number" value="7">7</button>
+                <button onclick="numberClick(this)" id="bt-8" class="b2 number" value="8">8</button>
+                <button onclick="numberClick(this)" id="bt-9" class="b2 number" value="9">9</button>
+                <button id="bt-subtracao" class="b2 operator">-</button>
             </div>
             <div id="linha03">
-                <button id="bt-4" class="b2">4</button>
-                <button id="bt-5" class="b2">5</button>
-                <button id="bt-6" class="b2">6</button>
+                <button onclick="numberClick(this)" id="bt-4" class="b2 number" value="4">4</button>
+                <button onclick="numberClick(this)" id="bt-5" class="b2 number" value="5">5</button>
+                <button onclick="numberClick(this)" id="bt-6" class="b2 number" value="6">6</button>
             </div>
             <div id="linha04">
-                <button id="bt-1" class="b2">1</button>
-                <button id="bt-2" class="b2">2</button>
-                <button id="bt-3" class="b2">3</button>
-                <button id="bt-adcao" class="b3">+</button>
+                <button onclick="numberClick(this)" id="bt-1" class="b2 number" value="1">1</button>
+                <button onclick="numberClick(this)" id="bt-2" class="b2 number" value="2">2</button>
+                <button onclick="numberClick(this)" id="bt-3" class="b2 number" value="3">3</button>
+                <button onclick="numberClick(this)" id="bt-adcao" class="b3 operator">+</button>
             </div>
             <div id="linha05">
-                <button id="bt-0" class="b2">0</button>
-                <button id="bt-ponto" class="b2">.</button>
-                <button id="bt-igual" class="b4">=</button>
+                <button onclick="numberClick(this)" id="bt-0" class="b2 number" value="0">0</button>
+                <button id="bt-ponto" class="b2 number" value=".">.</button>
+                <button id="bt-igual" class="b4 operator">=</button>
             </div>
         </div>
     </div>
