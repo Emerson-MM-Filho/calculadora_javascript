@@ -11,8 +11,6 @@ let fullCalc = []
 const showAll = () => {
     htmlInput.value = clientInput
     htmlOutput.innerText = fullCalc.join('')
-    console.log('clientInput = ', clientInput)
-    console.log('fullCalc = ', fullCalc)
 }
 
 
@@ -58,9 +56,11 @@ function operatorClick (operatorClicked) {
     if (clientInput != '') {
         if (clientInput[clientInput.length -1] == '.') { 
             fullCalc.push(clientInput, '0')
+        } else {
+            fullCalc.push(clientInput)
         }
     }
-    if (!isNaN(fullCalc[fullCalc.length -1])) {//ultimo elemento ser numero
+    if (!isNaN(fullCalc[fullCalc.length -1])) {
         fullCalc.push(operatorClicked.value)
     } else {
         fullCalc.pop()
@@ -75,5 +75,69 @@ function operatorClick (operatorClicked) {
     //         console.log('num1 = ', num1)
     //     }
     // }
+    showAll()
+}
+
+
+let num1 = ''
+let num2 = ''
+let calcOperator = ''
+let answer = ''
+
+//is a function to do all calc
+function equals () {
+    fullCalc.push(clientInput)
+    clientInput = ''
+    for (let index = 0; index < fullCalc.length; index++) {
+        // console.log(fullCalc[index])
+        if (num1 === '') {
+            num1 = Number(fullCalc[index])
+        } else if (calcOperator === '') {
+            calcOperator = fullCalc[index]
+        } else {
+            num2 = Number(fullCalc[index])
+        }
+
+        if (num1 != '' && num2 != '' && calcOperator != '') {
+            if (calcOperator === "+") {
+                answer = num1 + num2
+                num1 = answer
+                clientInput = answer
+                num2 = ''
+                calcOperator = ''
+                fullCalc = []
+            } else if (calcOperator === '-') {
+                answer = num1 - num2
+                num1 = answer
+                clientInput = answer
+                num2 = ''
+                calcOperator = ''
+                fullCalc = []
+            } else if (calcOperator === '*') {
+                answer = num1 * num2
+                num1 = answer
+                clientInput = answer
+                num2 = ''
+                calcOperator = ''
+                fullCalc = []
+            } else {
+                answer = num1 / num2
+                num1 = answer
+                clientInput = answer
+                num2 = ''
+                calcOperator = ''
+                fullCalc = []
+            }
+        }
+    }
+
+    
+    console.log(answer)
+    console.log(num1, calcOperator, num2)
+
+
+    num1 = ''
+    calcOperator = ''
+    num2 = ''
     showAll()
 }
